@@ -1,0 +1,65 @@
+.note {
+  background: #fefabc;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin: 10px;
+  width: calc(100% - 20px);
+  min-height: 150px;
+  position: relative;
+  font-family: 'Handlee', cursive;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.note.important {
+  background: #ffcccb;
+}
+
+.note-header {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.note-title {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.note-content {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.note-description {
+  font-size: 1em;
+  margin: 0;
+  text-align: left;
+}
+
+.delete-button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .note {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 992px) {
+  .note {
+    width: calc(25% - 20px);
+  }
+}
